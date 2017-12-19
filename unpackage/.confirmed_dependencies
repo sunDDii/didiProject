@@ -1,0 +1,22 @@
+{
+	"index.html": {
+		"resources": [
+			"images/bg.png",
+			"images/area-pause.png",
+			"images/pause.png",
+			"images/area-play.png",
+			"js/public.js",
+			"images/footer-bg.png",
+			"images/current.png",
+			"js/voice-play.js",
+			"images/footer-btn.png",
+			"images/search.png",
+			"css/voice-play.css",
+			"js/jquery-1.11.0.js",
+			"css/common.css",
+			"images/position.png",
+			"images/animation-voice.png",
+			"images/area-bg.png"
+		]
+	}
+}

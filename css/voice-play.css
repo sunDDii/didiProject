@@ -1,0 +1,422 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #333437 url(../images/bg.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body header,
+html header {
+  width: 100%;
+  overflow: hidden;
+}
+body header .search,
+html header .search {
+  width: 6.3rem;
+  height: 1rem;
+  margin: 0.39rem auto 0.6rem;
+  border: 0.03rem solid #979797;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  position: relative;
+}
+body header .search input,
+html header .search input {
+  width: 4.5rem;
+  height: 0.44rem;
+  background: none;
+  margin: 0.24rem 0 0.28rem 0.6rem;
+}
+body header .search span,
+html header .search span {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url(../images/search.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0.37rem;
+  top: 0.08rem;
+}
+body header .search input::-webkit-input-placeholder,
+html header .search input::-webkit-input-placeholder {
+  /*Chrome/Safari*/
+  color: #fff;
+}
+body header .search input::-moz-placeholder,
+html header .search input::-moz-placeholder {
+  /*Firefox*/
+  color: #fff;
+}
+body header .search  input::-ms-input-placeholder,
+html header .search  input::-ms-input-placeholder {
+  /*IE*/
+  color: #fff;
+}
+body section,
+html section {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0.43rem;
+  box-sizing: border-box;
+}
+body section .scenic-area,
+html section .scenic-area {
+  width: 100%;
+  overflow: hidden;
+}
+body section .scenic-area .area-list,
+html section .scenic-area .area-list {
+  width: 100%;
+  height: 1rem;
+  border-bottom: 0.03rem solid rgba(216, 216, 216, 0.3);
+}
+body section .scenic-area .area-list .play-btn,
+html section .scenic-area .area-list .play-btn {
+  width: 0.6rem;
+  height: 0.6rem;
+  display: block;
+  margin-top: 0.3rem;
+  position: relative;
+}
+body section .scenic-area .area-list .play-btn em,
+html section .scenic-area .area-list .play-btn em {
+  width: 0.6rem;
+  height: 0.6rem;
+  display: block;
+  background: url(../images/area-bg.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -moz-transform: rotate(0deg);
+  /* Firefox */
+  -webkit-transform: rotate(0deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(0deg);
+  /* Opera */
+}
+body section .scenic-area .area-list .play-btn i,
+html section .scenic-area .area-list .play-btn i {
+  width: 0.6rem;
+  height: 0.6rem;
+  display: block;
+  background: url(../images/area-play.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body section .scenic-area .area-list .play-btn i.active,
+html section .scenic-area .area-list .play-btn i.active {
+  background: url(../images/area-pause.png) no-repeat;
+  background-size: cover;
+}
+body section .scenic-area .area-list .play-btn em.active,
+html section .scenic-area .area-list .play-btn em.active {
+  background: none;
+}
+body section .scenic-area .area-list p,
+html section .scenic-area .area-list p {
+  width: 3.5rem;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fa593b;
+  font-size: 0.34rem;
+  line-height: 1.2rem;
+  text-indent: 0.1rem;
+  letter-spacing: 0.06rem;
+}
+body section .scenic-area .area-list p.active,
+html section .scenic-area .area-list p.active {
+  color: #fff;
+  font-size: 0.28rem;
+}
+body section .scenic-area .area-list .distance,
+html section .scenic-area .area-list .distance {
+  width: auto;
+  height: 1rem;
+  overflow: hidden;
+  display: block;
+}
+body section .scenic-area .area-list .distance i,
+html section .scenic-area .area-list .distance i {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+  background: url(../images/current.png) no-repeat;
+  background-size: cover;
+  margin-top: 0.4rem;
+}
+body section .scenic-area .area-list .distance em,
+html section .scenic-area .area-list .distance em {
+  font-size: 0.22rem;
+  display: inline-block;
+  color: #219fff;
+  line-height: 1.2rem;
+  letter-spacing: 0.01rem;
+}
+body section .scenic-area .area-list .distance strong,
+html section .scenic-area .area-list .distance strong {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+  margin-top: 0.4rem;
+  margin-left: 0.1rem;
+  display: none!important;
+}
+body section .scenic-area .area-list .distance strong b,
+html section .scenic-area .area-list .distance strong b {
+  width: 0.02rem;
+  height: 0.2rem;
+  display: inline-block;
+  background: #bbb;
+  margin-left: 0.05rem;
+  margin-top: 0.1rem;
+}
+body section .scenic-area .area-list .distance strong b:nth-child(1),
+html section .scenic-area .area-list .distance strong b:nth-child(1) {
+  margin-left: 0.05rem;
+  transform: scaleY(0.5);
+  -moz-transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  animation: myfirst1 0.5s infinite alternate;
+  -moz-animation: myfirst1 0.5s infinite alternate;
+  /* Firefox */
+  -webkit-animation: myfirst1 0.5s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: myfirst1 0.5s infinite alternate;
+  /* Opera */
+}
+body section .scenic-area .area-list .distance strong b:nth-child(2),
+html section .scenic-area .area-list .distance strong b:nth-child(2) {
+  transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  animation: myfirst2 0.5s infinite alternate;
+  -moz-animation: myfirst2 0.5s infinite alternate;
+  /* Firefox */
+  -webkit-animation: myfirst2 0.5s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: myfirst2 0.5s infinite alternate;
+  /* Opera */
+}
+body section .scenic-area .area-list .distance strong b:nth-child(3),
+html section .scenic-area .area-list .distance strong b:nth-child(3) {
+  transform: scaleY(0.5);
+  -moz-transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  animation: myfirst1 0.5s infinite alternate;
+  -moz-animation: myfirst1 0.5s infinite alternate;
+  /* Firefox */
+  -webkit-animation: myfirst1 0.5s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: myfirst1 0.5s infinite alternate;
+  /* Opera */
+}
+body section .scenic-area .area-list .distance strong b:nth-child(4),
+html section .scenic-area .area-list .distance strong b:nth-child(4) {
+  transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  animation: myfirst2 1s;
+  animation: myfirst2 0.5s infinite alternate;
+  -moz-animation: myfirst2 0.5s infinite alternate;
+  /* Firefox */
+  -webkit-animation: myfirst2 0.5s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: myfirst2 0.5s infinite alternate;
+  /* Opera */
+}
+body section .scenic-area .area-list .distance strong b:nth-child(5),
+html section .scenic-area .area-list .distance strong b:nth-child(5) {
+  transform: scaleY(0.5);
+  -moz-transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  animation: myfirst1 0.5s infinite alternate;
+  -moz-animation: myfirst1 0.5s infinite alternate;
+  /* Firefox */
+  -webkit-animation: myfirst1 0.5s  infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: myfirst1 0.5s  infinite alternate;
+  /* Opera */
+}
+body section .scenic-area .area-list .distance strong.active,
+html section .scenic-area .area-list .distance strong.active {
+  display: block!important;
+}
+body section .scenic-area .area-list .distance.active i,
+html section .scenic-area .area-list .distance.active i {
+  background: url(../images/position.png) no-repeat;
+  background-size: cover;
+}
+body section .scenic-area .area-list .distance.active em,
+html section .scenic-area .area-list .distance.active em {
+  color: #ffffff;
+  font-size: 0.2rem;
+}
+body section .scenic-area .area-list .distance.active strong,
+html section .scenic-area .area-list .distance.active strong {
+  display: inline;
+}
+body footer,
+html footer {
+  width: 100%;
+  height: 1.2rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: url(../images/footer-bg.png) no-repeat;
+  background-size: cover;
+}
+body footer span,
+html footer span {
+  width: 0.84rem;
+  height: 0.84rem;
+  display: block;
+  margin: 0.18rem auto 0.18rem;
+  background: url(../images/footer-btn.png) no-repeat;
+  background-size: cover;
+}
+body footer span i,
+html footer span i {
+  width: 0.84rem;
+  height: 0.84rem;
+  display: block;
+  margin: 0.18rem auto 0.18rem;
+  background: url(../images/pause.png) no-repeat;
+  background-size: cover;
+}
+body footer span i.active,
+html footer span i.active {
+  width: 0.84rem;
+  height: 0.84rem;
+  display: block;
+  margin: 0.18rem auto 0.18rem;
+  background: url(../images/play.png) no-repeat;
+  background-size: cover;
+}
+@keyframes myfirst1 {
+  from {
+    transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+}
+@-moz-keyframes myfirst1 {
+  from {
+    transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+}
+@-webkit-keyframes myfirst1 {
+  from {
+    transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+}
+@-o-keyframes myfirst1 {
+  from {
+    transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+}
+@keyframes myfirst2 {
+  from {
+    transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+}
+@-moz-keyframes myfirst2 {
+  from {
+    transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+}
+@-webkit-keyframes myfirst2 {
+  from {
+    transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+}
+@-o-keyframes myfirst2 {
+  from {
+    transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+}
